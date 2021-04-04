@@ -1,0 +1,63 @@
+{
+  "name": "adonis-fullstack-app",
+  "version": "4.0.0",
+  "adonis-version": "4.0.0",
+  "description": "The fullstack application boilerplate for Adonisjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ace test",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^4.0.7",
+    "@adonisjs/auth": "^2.0.10",
+    "@adonisjs/bodyparser": "^2.0.0",
+    "@adonisjs/cli": "^4.0.12",
+    "@adonisjs/cors": "^1.0.3",
+    "@adonisjs/fold": "^4.0.5",
+    "@adonisjs/framework": "^4.0.28",
+    "@adonisjs/ignitor": "^1.0.14",
+    "@adonisjs/lucid": "^6.2.1",
+    "@adonisjs/mail": "^3.0.4",
+    "@adonisjs/session": "^1.0.19",
+    "@adonisjs/shield": "^1.0.4",
+    "@adonisjs/validator": "^5.0.0",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "cmd-shim": "^4.0.2",
+    "edge.js": "^1.1.4",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "random-string": "^0.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "save": "^2.4.0",
+    "sql": "^0.78.0"
+  },
+  "devDependencies": {
+    "jquery": "^3.5.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "autoload": {
+    "App": "./app"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

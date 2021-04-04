@@ -1,0 +1,16 @@
+   @layout('layout.app')
+
+   @section('content')
+<link rel="stylesheet" href="/style.css" />
+
+    <form action="/book" method="post" class="cf">
+     {{ csrfField() }}
+      <div class="half left cf">
+              <input name="titulo" id="titulo" type="text" placeholder="Titulo"></input>
+              <input name="ano" id="ano" type="text" placeholder="Año"></input>
+              <input name="descripcion" id="descripcion" type="text" placeholder="Descripción"></input>
+      </div>
+      <input type="submit" value="Submit" id="input-submit">
+    </form>
+
+@endsection

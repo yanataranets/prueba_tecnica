@@ -1,0 +1,26 @@
+@layout('layout.app')
+
+@section('content')
+<link rel="stylesheet" href="/style.css" />
+<a href="/book/create" class="anadir" >Añadir libro</a>
+
+<div class="wrapper">
+@each(book in books)
+    @if(auth.user.username === book.author)
+
+<div class="card">
+	<h3 class="card-title">{{book.titulo}}</h3>
+	<h5>{{book.author}}</h5>
+		<p class="card-content">{{book.descripcion}}</p>
+
+		<a class="card-btn" href="/book/{{book.id}}/edit" style="color: #e6e7e8;">Edit</a>
+    <a class="card-btn" href="{{book.id}}">Show</a><br>
+    <form  action="/book/{{ book.id }}?_method=delete" method="post">
+    {{ csrfField() }}
+      <button class="card-btn" type="submit">Delete</button>
+    </form>
+	</div>
+ @endif
+@endeach
+	</div>
+@endsection

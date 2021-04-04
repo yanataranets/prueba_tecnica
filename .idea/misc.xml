@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/resources/views/cantidadd/create.edge" />
+    <file url="file://$PROJECT_DIR$/resources/views/cantidadd/edit.edge" />
+    <file url="file://$PROJECT_DIR$/resources/views/firmacliente/edit.edge" />
+    <file url="file://$PROJECT_DIR$/resources/views/firmatecnico/edit.edge" />
+  </component>
+</project>

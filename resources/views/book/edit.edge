@@ -1,0 +1,16 @@
+@layout('layout.app')
+
+@section('content')
+<link rel="stylesheet" href="/style.css" />
+<form action="/book/{{book.id}}?_method=PUT" method="post">
+
+      <div class="half left cf">
+              <input  name="titulo" id="titulo" type="text" value="{{book.titulo}}" ></input>
+              <input  name="ano" id="ano" type="text" value="{{book.ano}}"></input>
+              <input  name="descripcion" id="descripcion" type="text" value="{{book.descripcion}}"></input>
+      </div>
+      <input type="submit" id="input-submit" value="Editar"/>
+
+</form>
+
+@endsection

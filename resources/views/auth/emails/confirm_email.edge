@@ -1,0 +1,9 @@
+<p>Hi {{ username }},</p>
+
+<p>
+  Bienvenido a la aplicación para autores y libros, confirme su dirección de correo electrónico haciendo clic en el enlace a continuación:
+</p>
+
+<p>
+  <a href="{{ appUrl('register/confirm/' + confirmation_token) }}">Confirmar el correo</a>
+</p>
